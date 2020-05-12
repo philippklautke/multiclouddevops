@@ -1,0 +1,10 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/.vs/MultiCloudDevops/v16
+/.vs/slnx.sqlite
+/TestBlog/.vs/TestBlog/v16
+/TestBlog/.vs/TestBlog
+*.tfstate
+/Terraform/.terraform/

@@ -1,0 +1,113 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>BlogApi</name>
+    </assembly>
+    <members>
+        <member name="T:BlogApi.Controllers.BlogPostsController">
+            <summary>
+            Class for Blog Post Controller
+            </summary>
+        </member>
+        <member name="M:BlogApi.Controllers.BlogPostsController.#ctor(BlogApi.Infrastructure.Interfaces.IBlogPostService)">
+            <summary>
+            Constructor for Blog Post Controller
+            </summary>
+            <param name="blogPostService"></param>
+        </member>
+        <member name="M:BlogApi.Controllers.BlogPostsController.GetBlogPost">
+            <summary>
+            Endpoint to get all Blog Posts
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:BlogApi.Controllers.BlogPostsController.GetBlogPost(System.Int32)">
+            <summary>
+            Endpoint to get Blog Post by ID
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BlogApi.Controllers.BlogPostsController.PutBlogPost(System.Int32,BlogApi.Infrastructure.Resources.BlogPostResource)">
+            <summary>
+            Endpoint to PUT Blog Post for Specific ID
+            </summary>
+            <param name="id"></param>
+            <param name="blogPostResource"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BlogApi.Controllers.BlogPostsController.PostBlogPost(BlogApi.Infrastructure.Resources.BlogPostResource)">
+            <summary>
+            Endpoint to Create new BlogPost
+            </summary>
+            <param name="blogPostResource"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BlogApi.Controllers.BlogPostsController.DeleteBlogPost(System.Int32)">
+            <summary>
+            Endpoint to Delete BlogPost by Id
+            </summary>
+            <param name="id"></param>
+            <returns></returns>
+        </member>
+        <member name="T:BlogApi.Extensions.ServiceCollectionExtensions">
+            <summary>
+            Extension for Service Collection
+            </summary>
+        </member>
+        <member name="M:BlogApi.Extensions.ServiceCollectionExtensions.AddFullDependencies(Microsoft.Extensions.DependencyInjection.IServiceCollection,Microsoft.Extensions.Configuration.IConfiguration)">
+            <summary>
+            Method to Add All Needed Dependencies
+            </summary>
+            <param name="services"></param>
+            <param name="configuration"></param>
+            <returns></returns>
+        </member>
+        <member name="T:BlogApi.Program">
+            <summary>
+            Main Program
+            </summary>
+        </member>
+        <member name="M:BlogApi.Program.Main(System.String[])">
+            <summary>
+            Main
+            </summary>
+            <param name="args"></param>
+        </member>
+        <member name="M:BlogApi.Program.CreateWebHostBuilder(System.String[])">
+            <summary>
+            Create Host Builder
+            </summary>
+            <param name="args"></param>
+            <returns></returns>
+        </member>
+        <member name="T:BlogApi.Startup">
+            <summary>
+            Startup Class
+            </summary>
+        </member>
+        <member name="M:BlogApi.Startup.#ctor(Microsoft.Extensions.Configuration.IConfiguration)">
+            <summary>
+            Startup Constructor
+            </summary>
+            <param name="configuration"></param>
+        </member>
+        <member name="P:BlogApi.Startup.Configuration">
+            <summary>
+            Configuration Object
+            </summary>
+        </member>
+        <member name="M:BlogApi.Startup.ConfigureServices(Microsoft.Extensions.DependencyInjection.IServiceCollection)">
+            <summary>
+            This method gets called by the runtime
+            </summary>
+            <param name="services"></param>
+        </member>
+        <member name="M:BlogApi.Startup.Configure(Microsoft.AspNetCore.Builder.IApplicationBuilder)">
+            <summary>
+            This method gets called by the runtime
+            </summary>
+            <param name="app"></param>        
+        </member>
+    </members>
+</doc>
