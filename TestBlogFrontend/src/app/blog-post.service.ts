@@ -24,7 +24,6 @@ export class BlogPostService {
    }
 
    getBlogPosts():Observable<BlogPost[]>{
-    debugger;
      return this.http.get<BlogPost[]>(this.appSettingsService.settings.apiUrl + 'api/BlogPosts/').pipe(retry(1),catchError(this.errorHandler));
    }
    getBlogPost(postId:number):Observable<BlogPost>{
