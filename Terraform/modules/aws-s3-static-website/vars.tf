@@ -1,7 +1,6 @@
 variable "bucket_name" {
     description = "Name of the Bucket"
 }
-
 variable "aws_access_key" {
     description = "AWS Access Key"
 }
