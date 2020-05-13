@@ -32,3 +32,11 @@ module "azure_sql" {
     azure_clientSecret = var.azure_clientSecret
     azure_tenant = var.azure_tenant
 }
+terraform {
+    backend "azurerm" {
+        resource_group_name = var.azure_terraformStateStorageResourceGroup
+        storage_account_name = var.azure_terraformStateStorageAccountName
+        container_name = var.azure_terraformStateStorageContainerName
+        key = "terraform.tfstate"
+    }
+}
