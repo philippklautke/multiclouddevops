@@ -1,8 +1,11 @@
 variable "aws_region" {
+    description = "AWS deployment region"
 }
 variable "aws_access_key" {
+    description = "AWS Access Key"
 }
-variable "aws_secret_key" {    
+variable "aws_secret_key" {
+    description = "AWS Secret Key"
 }
 variable "site_name" {
     description = "Name of the Bucket"
@@ -30,4 +33,13 @@ variable "azure_dbadmin" {
 }
 variable "azure_dbadminpassword" {
     description ="DB Admin User Password"
+}
+variable "azure_terraformStateStorageResourceGroup" {
+    description = "Resource Group of the Storage Account for State Management"
+}
+variable "azure_terraformStateStorageAccountName" {
+    description = "Storage Account Name of the Storage Account for State Management"
+}
+variable "azure_terraformStateStorageContainerName" {
+    description = "Container Name within Storage Account for State Management"
 }
