@@ -43,3 +43,11 @@ variable "azure_terraformStateStorageAccountName" {
 variable "azure_terraformStateStorageContainerName" {
     description = "Container Name within Storage Account for State Management"
 }
+provider "azurerm" {
+    version = "=2.0.0"
+    subscription_id = var.azure_subscriptionId
+    client_id = var.azure_clientId
+    client_secret = var.azure_clientSecret
+    tenant_id = var.azure_tenant
+    features {}
+}
