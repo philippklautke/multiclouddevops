@@ -17,7 +17,7 @@ variable "azure_location" {
     description = "Region of Azure Resources"
 }
 variable "appName" {
-	description = "App Name of the Web App"
+    description = "App Name of the Web App"
 }
 variable "azure_clientId" {
     description = "Client ID to Connect with"
@@ -29,10 +29,10 @@ variable "azure_tenant" {
     description = "Tenant Id to connect to"
 }
 variable "azure_dbadmin" {
-    description ="DBAdmin User Name"
+    description = "DBAdmin User Name"
 }
 variable "azure_dbadminpassword" {
-    description ="DB Admin User Password"
+    description = "DB Admin User Password"
 }
 variable "azure_terraformStateStorageResourceGroup" {
     description = "Resource Group of the Storage Account for State Management"
